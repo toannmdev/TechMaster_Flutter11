@@ -152,6 +152,8 @@
 
 import 'dart:developer';
 
+import 'buoi3.dart' as b3;
+
 // void main(List<String> args) {
 //   List strs = [
 //     "a", // 0
@@ -212,31 +214,33 @@ import 'dart:developer';
 //   /// cách viết rõ nghĩa, sử dụng [generic]
 // }
 
-void main(List<String> args) {
-  /// cách viết ngắn gọn
-  Map map = {
-    "key": "value",
-    "key": "value123",
-  };
-  print("map -> $map");
-  // sẽ in ra: map -> {key: value}
-  /// cách viết rõ nghĩa
-  Map map1 = Map<String, String>();
-  map1["key"] = "value";
-  print("map1 -> $map1");
-  // sẽ in ra: map1 -> {key: value}
+// void main(List<String> args) {
+//   /// cách viết ngắn gọn
+//   Map map = {
+//     "key": "value",
+//     "key": "value123",
+//   };
+//   print("map -> $map");
+//   // sẽ in ra: map -> {key: value}
+//   /// cách viết rõ nghĩa
+//   Map map1 = Map<String, String>();
+//   map1["key"] = "value";
+//   print("map1 -> $map1");
+//   // sẽ in ra: map1 -> {key: value}
 
-  Map map12 = {"homnay": "troimuaratto"};
-  Map map123 = {
-    [1, 2, 3]: "abc"
-  };
+//   Map map12 = {"homnay": "troimuaratto"};
+//   Map map123 = {
+//     [1, 2, 3]: "abc"
+//   };
 
-  Map newMap = map..addAll({'abc': 123});
-  print('keys -> ${map.keys}');
-  print('values -> ${map.values}');
+//   Map newMap = map..addAll({'abc': 123});
+//   print('keys -> ${map.keys}');
+//   print('values -> ${map.values}');
 
-  print("map -> $map");
+//   print("map -> $map");
 
 
-  print("Đây là kết quả buổi học thứ 2 về Dart: DART BASIC (phần 1)");
-}
+//   print("Đây là kết quả buổi học thứ 2 về Dart: DART BASIC (phần 1)");
+// }
+
+
