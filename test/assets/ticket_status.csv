@@ -1,0 +1,82 @@
+,,,,Add follower,Comment,Provide info,Edit,Duplicate,Edit field,Close ticket,Re-open ticket,Cancel ticket,Delete ticket,Approve,Reject,Done,Add handler,Change handler,Request to provide info,Move to on-hold,Continue handle),Approve,Reject,Unfollow,Add label
+ROLE,TRẠNG THÁI YÊU CẦU,TRẠNG THÁI BƯỚC,Nộp yêu cầu,Thêm người theo dõi,Bình luận,"Bổ sung thông tin
+(Chỉ khi
+người thực hiện yêu cầu
+bổ sung thông tin)","Chỉnh sửa
+thông tin đã bổ sung",Tạo bản sao,"Chỉnh sửa nội dung
+(Dựa theo quyền chỉnh sửa field ở trong bước)",Đóng yêu cầu,Mở lại yêu cầu,Hủy yêu cầu (Nếu có quyền + thời điểm tùy thuộc vào cài đặt admin),Xóa yêu cầu (Nếu có quyền + thời điểm tùy thuộc vào cài đặt admin),Duyệt,Không duyệt,Đã xử lý xong,"Thêm người thực hiện
+(Người yêu cầu chỉ được thêm khi bước phê duyệt có cài đặt TBP làm người thực hiện)","Chuyển người thực hiện
+(Người yêu cầu chỉ được thêm khi bước phê duyệt có cài đặt TBP làm người thực hiện)",Yêu cầu bổ sung,Bảo lưu yêu cầu,Tiếp tục xử lý,"Duyệt bảo lưu
+(Nếu cấp quyền)","Không duyệt bảo lưu
+(Nếu cấp quyền)",Bỏ theo dõi,Thêm nhãn dán
+Người yêu cầu,Chờ xử lý,Chờ xử lý,Không,CÓ,CÓ,Không,Không,CÓ,CÓ,Không,Không,CÓ,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không
+,Đang xử lý,Chờ xử lý,Không,CÓ,CÓ,CÓ,CÓ,CÓ,CÓ,Không,Không,CÓ,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không
+,,Đang xử lý,Không,CÓ,CÓ,CÓ,CÓ,CÓ,CÓ,Không,Không,CÓ,Không,Không,Không,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,Không
+,,Chờ duyệt on-hold,Không,CÓ,CÓ,Không,Không,CÓ,CÓ,Không,Không,CÓ,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,CÓ,CÓ,Không,Không
+,,Chờ bổ sung yêu cầu,Không,CÓ,CÓ,CÓ,CÓ,CÓ,CÓ,Không,Không,CÓ,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không
+,,Đã xử lý/Đã duyệt,Không,CÓ,CÓ,CÓ,CÓ,CÓ,CÓ,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không
+,On-hold,On-hold,Không,CÓ,CÓ,Không,CÓ,CÓ,CÓ,Không,Không,CÓ,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không
+,Đã xử lý,Đã xử lý,Không,CÓ,CÓ,Không,Không,CÓ,Không,CÓ,CÓ,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không
+,Đã đóng,Đã xử lý,Không,CÓ,CÓ,Không,Không,CÓ,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không
+,Đã hủy,Đã hủy,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không
+Người thực hiện,Chờ xử lý,Chờ xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không
+,Đang xử lý,Chờ xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không
+,,Đang xử lý,Không,CÓ,CÓ,Không,Không,Không,CÓ,Không,Không,CÓ,Không,CÓ,CÓ,CÓ,Không,CÓ,CÓ,CÓ,Không,Không,Không,Không,CÓ
+,,Chờ duyệt on-hold,Không,CÓ,CÓ,Không,Không,Không,CÓ,Không,Không,CÓ,Không,Không,Không,Không,Không,CÓ,Không,Không,CÓ,CÓ,CÓ,Không,CÓ
+,,Chờ bổ sung yêu cầu,Không,CÓ,CÓ,Không,Không,Không,CÓ,Không,Không,CÓ,Không,CÓ,CÓ,CÓ,Không,CÓ,CÓ,Không,Không,Không,Không,Không,CÓ
+,,Đã xử lý/Đã duyệt,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ
+,On-hold,On-hold,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,CÓ,Không,Không,CÓ,Không,Không,Không,CÓ
+,Đã xử lý,Đã xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ
+,Đã đóng,Đã xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ
+,Đã hủy,Đã hủy,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không
+Người quản trị bước,Chờ xử lý,Chờ xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không
+,Đang xử lý,Chờ xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không
+,,Đang xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,CÓ,CÓ,CÓ,Không,Không,Không,Không,Không
+,,Chờ duyệt on-hold,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,CÓ,CÓ,Không,Không,CÓ,CÓ,Không,Không
+,,Chờ bổ sung yêu cầu,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,CÓ,CÓ,CÓ,Không,Không,Không,Không,Không
+,,Đã xử lý/Đã duyệt,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không
+,On-hold,On-hold,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không
+,Đã xử lý,Đã xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không
+,Đã đóng,Đã xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không
+,Đã hủy,Đã hủy,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không
+Gửi đến nhóm,Chờ xử lý,Chờ xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không
+,Đang xử lý,Chờ xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không
+,,Đang xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không
+,,Chờ duyệt on-hold,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,CÓ,Không,Không
+,,Chờ bổ sung yêu cầu,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không
+,,Đã xử lý/Đã duyệt,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không
+,On-hold,On-hold,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không
+,Đã xử lý,Đã xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không
+,Đã đóng,Đã xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không
+,Đã hủy,Đã hủy,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không
+Người theo dõi,Chờ xử lý,Chờ xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không
+,Đang xử lý,Chờ xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không
+,,Đang xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không
+,,Chờ duyệt on-hold,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,CÓ,CÓ,Không
+,,Chờ bổ sung yêu cầu,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không
+,,Đã xử lý/Đã duyệt,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không
+,On-hold,On-hold,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không
+,Đã xử lý,Đã xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không
+,Đã đóng,Đã xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không
+,Đã hủy,Đã hủy,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không
+Tạo bởi phòng ban,Chờ xử lý,Chờ xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không
+,Đang xử lý,Chờ xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không
+,,Đang xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không
+,,Chờ duyệt on-hold,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,CÓ,CÓ,Không
+,,Chờ bổ sung yêu cầu,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không
+,,Đã xử lý/Đã duyệt,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không
+,On-hold,On-hold,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không
+,Đã xử lý,Đã xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không
+,Đã đóng,Đã xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không
+,Đã hủy,Đã hủy,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không
+"Người tư vấn/hỗ trợ
+(người theo dõi)",Chờ xử lý,Chờ xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không
+,Đang xử lý,Chờ xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không
+,,Đang xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không
+,,Chờ duyệt on-hold,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,CÓ,CÓ,Không
+,,Chờ bổ sung yêu cầu,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không
+,,Đã xử lý/Đã duyệt,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không
+,On-hold,On-hold,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không
+,Đã xử lý,Đã xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không
+,Đã đóng,Đã xử lý,Không,CÓ,CÓ,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không
+,Đã hủy,Đã hủy,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không,Không,Không,Không,Không,Không,Không,Không,Không,Không,CÓ,Không
