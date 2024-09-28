@@ -17,6 +17,8 @@ class MyFormField extends StatefulWidget {
 class _MyFormFieldState extends State<MyFormField> {
   void login() {
     formKey.currentState?.validate();
+
+    inputUsernameController.text = '';
   }
 
   final formKey = GlobalKey<FormState>();
