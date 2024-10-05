@@ -10,6 +10,36 @@ class MyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return GridView.custom(
+      gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+          maxCrossAxisExtent: 100, childAspectRatio: 3),
+      childrenDelegate: SliverChildBuilderDelegate(
+        (context, index) {
+          return Container(
+            color: Colors.teal[100],
+            child: Center(
+              child: Text("Item $index"),
+            ),
+          );
+        },
+      ),
+    );
+
+    return GridView.builder(
+      gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+          maxCrossAxisExtent: 100, childAspectRatio: 3),
+      // const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4,childAspectRatio: 3),
+      itemBuilder: (context, index) {
+        return Container(
+          color: Colors.teal[100],
+          child: Center(
+            child: Text("Item $index"),
+          ),
+        );
+      },
+      itemCount: 150,
+    );
+
     return GridView.count(
       // padding: const EdgeInsets.all(20),
       // crossAxisSpacing: 10,
