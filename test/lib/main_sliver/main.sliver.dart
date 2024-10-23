@@ -34,7 +34,7 @@ class MyWidget extends StatelessWidget {
               delegate: _SliverAppBarDelegate(
                 Container(
                     height: kToolbarHeight,
-                    color: Colors.white,
+                    color: Colors.red,
                     child: const Center(
                       child: Text(
                         "Pinned Header",
@@ -76,7 +76,13 @@ class MyWidget extends StatelessWidget {
                       style: const TextStyle(color: Colors.red, fontSize: 50),
                     ),
                   );
-                })
+                }),
+            SliverList(
+              delegate: SliverChildBuilderDelegate(
+                (context, index) => ListTile(title: Text('Item #$index')),
+                childCount: 20,
+              ),
+            ),
           ],
         ),
       ),

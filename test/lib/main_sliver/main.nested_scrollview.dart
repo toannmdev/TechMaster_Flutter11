@@ -63,37 +63,34 @@ class NestedScrollViewExample extends StatelessWidget {
     // );
 
     return Scaffold(
-        body: NestedScrollView(
-            // Setting floatHeaderSlivers to true is required in order to float
-            // the outer slivers over the inner scrollable.
-            floatHeaderSlivers: false,
-            headerSliverBuilder:
-                (BuildContext context, bool innerBoxIsScrolled) {
-              return <Widget>[
-                SliverToBoxAdapter(
-                  child: Container(
-                    height: 1000,
-                    color: Colors.red,
-                  ),
-                )
-                // SliverAppBar(
-                //   title: const Text('Floating Nested SliverAppBar'),
-                //   floating: false,
-                //   pinned: true,
-                //   snap: false,
-                //   expandedHeight: 200.0,
-                //   forceElevated: innerBoxIsScrolled,
-                // ),
-              ];
-            },
-            body: ListView.builder(
-                padding: const EdgeInsets.all(8),
-                itemCount: 30,
-                itemBuilder: (BuildContext context, int index) {
-                  return SizedBox(
-                    height: 50,
-                    child: Center(child: Text('Item $index')),
-                  );
-                })));
+      body: NestedScrollView(
+        // Setting floatHeaderSlivers to true is required in order to float
+        // the outer slivers over the inner scrollable.
+        floatHeaderSlivers: true,
+        headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
+          print('innerBoxIsScrolled -> $innerBoxIsScrolled');
+          return <Widget>[
+            SliverAppBar(
+              title: const Text('Floating Nested SliverAppBar'),
+              floating: true,
+              pinned: false,
+              snap: true,
+              expandedHeight: 200.0,
+              forceElevated: innerBoxIsScrolled,
+            ),
+          ];
+        },
+        body: ListView.builder(
+          padding: const EdgeInsets.all(8),
+          itemCount: 300,
+          itemBuilder: (BuildContext context, int index) {
+            return SizedBox(
+              height: 50,
+              child: Center(child: Text('Item $index')),
+            );
+          },
+        ),
+      ),
+    );
   }
 }

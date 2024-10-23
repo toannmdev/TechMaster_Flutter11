@@ -70,10 +70,10 @@ void main() {
     MaterialApp(
       theme: ThemeData(
         textTheme: const TextTheme(
-          headlineLarge: TextStyle(
-            fontSize: 60,
-            color: Colors.orange,
-          ),
+          // headlineLarge: TextStyle(
+          //   fontSize: 60,
+          //   color: Colors.orange,
+          // ),
         ),
       ),
       home: const MyPage(),

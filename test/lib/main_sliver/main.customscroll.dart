@@ -15,6 +15,8 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   final List<int> listItem = [];
 
+  ValueNotifier<int> rxCurrentAnimatedItems = ValueNotifier(120);
+
   @override
   void initState() {
     super.initState();
@@ -30,17 +32,36 @@ class _MyAppState extends State<MyApp> {
       body: SafeArea(
         child: CustomScrollView(
           slivers: [
+            const SliverToBoxAdapter(
+              child: Text(
+                "aaaa",
+                style: TextStyle(fontSize: 100),
+              ),
+            ),
+            ValueListenableBuilder(
+              valueListenable: rxCurrentAnimatedItems,
+              builder: (context, value, child) {
+                return SliverAnimatedList(
+                  itemBuilder: (context, index, animation) {
+                    return Text('$index');
+                  },
+                  initialItemCount: value,
+                );
+              },
+            ),
             SliverAppBar(
-              expandedHeight: 200.0,
+              expandedHeight: 500.0,
+              stretch: true,
+              snap: false,
               floating: false,
               pinned: true,
               flexibleSpace: FlexibleSpaceBar(
                 title: const Text(
                   'CustomScrollView', // Title text for the SliverAppBar
-                  style: TextStyle(color: Colors.black, fontSize: 15),
+                  style: TextStyle(color: Colors.white, fontSize: 15),
                 ),
                 background: Image.network(
-                  'https://static.startuptalky.com/2021/06/GeeksforGeeks-StartupTalky.jpg', // Replace with your image URL
+                  'https://www.vietnamworks.com/hrinsider/wp-content/uploads/2023/12/hinh-anh-thien-nhien-3d-dep-006.jpg',
                   fit: BoxFit.cover, // Ensure the image covers the entire space
                 ),
               ),
@@ -71,6 +92,14 @@ class _MyAppState extends State<MyApp> {
             }, childCount: listItem.length)),
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          rxCurrentAnimatedItems.value++;
+          setState(() {
+            
+          });
+        },
       ),
     );
   }

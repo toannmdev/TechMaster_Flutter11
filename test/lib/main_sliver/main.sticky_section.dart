@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 void main(List<String> args) {
   runApp(
     const MaterialApp(
+      debugShowCheckedModeBanner: true,
       home: SliverMainAxisGroupExample(),
     ),
   );
@@ -23,7 +24,8 @@ class SliverMainAxisGroupExample extends StatelessWidget {
                 color: index.isEven ? Colors.amber[300] : Colors.blue[300],
                 height: 100,
                 padding: const EdgeInsets.all(16),
-                child: Text('Item $index', style: const TextStyle(fontSize: 20)),
+                child:
+                    Text('Item $index', style: const TextStyle(fontSize: 20)),
               );
             },
             itemCount: 20,
@@ -35,7 +37,8 @@ class SliverMainAxisGroupExample extends StatelessWidget {
                 color: index.isEven ? Colors.amber[300] : Colors.blue[300],
                 height: 100,
                 padding: const EdgeInsets.all(16),
-                child: Text('Item $index', style: const TextStyle(fontSize: 20)),
+                child:
+                    Text('Item $index', style: const TextStyle(fontSize: 20)),
               );
             },
             itemCount: 20,
@@ -51,11 +54,12 @@ class SectionWidget extends StatelessWidget {
   final Widget Function(BuildContext, int) itemBuilder;
   final int itemCount;
 
-  const SectionWidget(
-      {super.key,
-      required this.header,
-      required this.itemBuilder,
-      required this.itemCount});
+  const SectionWidget({
+    super.key,
+    required this.header,
+    required this.itemBuilder,
+    required this.itemCount,
+  });
 
   @override
   Widget build(BuildContext context) {
