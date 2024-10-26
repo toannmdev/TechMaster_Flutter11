@@ -1,6 +1,8 @@
+import 'dart:developer';
 import 'dart:math' as math show pi;
 import 'dart:ui';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 ///
@@ -49,7 +51,7 @@ class ShapePainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final Paint paint = Paint()
-      ..color = Colors.red
+      ..color = Colors.orange
       ..strokeWidth = 6
       ..style = PaintingStyle.stroke // nếu xài path bắt buộc phải có style
       ..strokeCap = StrokeCap.round;
@@ -66,9 +68,9 @@ class ShapePainter extends CustomPainter {
         canvas.drawLine(startingPoint, endingPoint, paint);
       } else {
         // Cach 2: dung Path
-        path.moveTo(0, size.height / 2);
-        path.lineTo(size.width, size.height / 2);
-        canvas.drawPath(path, paint);
+        // path.moveTo(0, size.height / 2);
+        // path.lineTo(size.width, size.height / 2);
+        // canvas.drawPath(path, paint);
 
         // --------- Path addRect Rect.fromLTWH--------- \\
         void addRect() {
@@ -76,7 +78,7 @@ class ShapePainter extends CustomPainter {
 
           final Path path = Path();
           path.addRect(
-            Rect.fromLTWH(size.width / 2, size.height / 2 + 20, 100, 100),
+            Rect.fromLTWH(size.width / 2, size.height / 2 + 20, 160, 100),
           );
           canvas.drawPath(path, paint);
         }
@@ -152,7 +154,7 @@ class ShapePainter extends CustomPainter {
           canvas.drawPath(path, paint);
         }
 
-        addPolygon();
+        // addPolygon();
       }
     }
 
@@ -186,8 +188,23 @@ class ShapePainter extends CustomPainter {
       path.moveTo(0, 0);
       // path.quadraticBezierTo(
       //     size.width / 2, size.height / 2, size.width - 100, size.height - 100);
-      path.quadraticBezierTo(100, 100, 400, 400);
+      path.quadraticBezierTo(
+          100, 300, size.width - 100, size.height - 100);
+      // path.quadraticBezierTo(100, 100, 400, 400);
       canvas.drawPath(path, paint);
+
+
+      final path2 = Path();
+      path2.moveTo(0, 0);
+      // path.quadraticBezierTo(
+      //     size.width / 2, size.height / 2, size.width - 100, size.height - 100);
+      path2.quadraticBezierTo(
+          0, 0, size.width - 100, size.height - 100);
+      // path.quadraticBezierTo(100, 100, 400, 400);
+      canvas.drawPath(path2, Paint()
+                ..color = Colors.green
+                ..strokeWidth = 4
+                ..style = PaintingStyle.stroke);
     }
 
     // --------- QuadraticBezier --------- \\
@@ -241,7 +258,7 @@ class ShapePainter extends CustomPainter {
         canvas.drawPath(path, paint);
       }
 
-      // addArc();
+      addArc();
     }
 
     // drawLine();
